@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #101011;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.app {
+  margin: 1em 0.5em;
+}
+
+.container {
+  background-color: #a8bfb6;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 1.3em goldenrod;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input {
+  font-weight: 600;
+  height: 2.5em;
+  border: none;
+}
+
+input:focus {
+  box-shadow: 0 0 0.5em seashell;
+}
+
+button#button {
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: indigo;
+  height: 2em;
+  cursor: pointer;
+}
+
+ul {
+  position: relative;
+  left: -30px;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 0.3em;
+}
+
+ul li button {
+  font-weight: 900;
+  background-color: goldenrod;
+  color: black;
+  border: none;
+  padding: 0.3em 0.5em;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.4em;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background-color: rgba(218, 165, 32, 0.4);
+}
