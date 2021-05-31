@@ -53,18 +53,18 @@ function criaListaDeCompras() {
     function liButtonEvents() {
         for(i = 0; i < liButtons.length; i++){
             liButtons[i].addEventListener("click", deleteItem);
-        }
-    }
-    itemInput.addEventListener('keypress', function(e) {
-        if(e.key === 'Enter') {
-            criaLista(itemInput.value);
         };
-    });
+    };
     adicionaListaSalva();
     liButtonEvents();
     button.addEventListener("click", ()=>{
         if(!itemInput.value) return;
-        criaLista(itemInput.value)
+        criaLista(itemInput.value);
+    });
+    itemInput.addEventListener('keypress', function(e) {
+        if(e.key === 'Enter') {
+            criaLista(itemInput.value);
+        };
     });
 }
 
